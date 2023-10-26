@@ -1,0 +1,31 @@
+<!-- 
+Deze plugin maakt gebruik van de Unsplash API om afbeeldingen op te halen en weer te geven. Houd rekening met het volgende:
+1. Auteursrechten: De afbeeldingen die via deze plugin worden weergegeven, zijn eigendom van hun respectievelijke auteurs en zijn onderhevig aan auteursrechten. Zorg ervoor dat je de juiste attributies en toestemmingen hebt als je de afbeeldingen wilt gebruiken voor commerciële doeleinden.
+2. Gegevensbeveiliging: Deze plugin slaat geen persoonlijke gegevens op, maar kan gegevens van de Unsplash API ophalen. We nemen geen verantwoordelijkheid voor het gebruik en de beveiliging van deze gegevens.
+3. Verantwoord gebruik: Gebruik deze plugin verantwoordelijk en ethisch. Respecteer de gebruiksvoorwaarden en beleidslijnen van Unsplash bij het gebruik van hun diensten.
+4. Ondersteuning: Deze plugin wordt geleverd zoals deze is, zonder enige garantie. We bieden geen officiële ondersteuning en aanvaarden geen aansprakelijkheid voor eventuele problemen die zich kunnen voordoen bij het gebruik van de plugin.
+Door deze plugin te installeren en te gebruiken, ga je akkoord met deze voorwaarden. Raadpleeg de officiële documentatie en gebruiksvoorwaarden van Unsplash voor meer informatie over hun service. 
+
+This plugin uses the Unsplash API to retrieve and display images. Please note:
+1. Copyright: The images displayed through this plugin are the property of their respective authors and are subject to copyright. Make sure you have the correct attributions and permissions if you want to use the images for commercial purposes.
+2. Data Security: This plugin does not store any personal data, but it can retrieve data from the Unsplash API. We take no responsibility for the use and security of this data.
+3. Responsible use: Use this plugin responsibly and ethically. Please respect Unsplash's terms of use and policies when using their services.
+4. Support: This plugin is provided as is without warranty of any kind. We do not provide official support and accept no liability for any issues that may arise when using the plugin.
+By installing and using this plugin you agree to these terms. For more information about their service, see Unsplash's official documentation and terms of use.
+-->
+
+<div>
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{{ wallpaperData[0].urls.regular }}" class="img-fluid rounded-start" alt="{{ wallpaperData[0].alt_description }}">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Unsplash image Door: {{ wallpaperData[0].user.name }}</h5>
+          {% if wallpaperData[0].description %}<p class="card-text">Beschrijving: {{ wallpaperData[0].description }}</p>{% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+{
+    "name": "nielsvandendries/unsplash-plugin",
+    "type": "october-plugin",
+    "description": "Retrieves an image from Unsplash using API",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
