@@ -1,4 +1,4 @@
-<?php namespace Nielsvandendries\Unsplash;
+<?php namespace NielsVanDenDries\Unsplash;
 
 use Backend;
 use System\Classes\PluginBase;

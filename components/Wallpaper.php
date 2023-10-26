@@ -1,4 +1,4 @@
-<?php namespace Nielsvandendries\Unsplash\Components;
+<?php namespace NielsVanDenDries\Unsplash\Components;
 
 use Cms\Classes\ComponentBase;
 use GuzzleHttp\Client;
